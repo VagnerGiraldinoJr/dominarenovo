@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect('/admin');
+    return redirect('/admin'); //melhor commit
 });
 
 Route::group(['prefix' => 'admin','middleware' => ['auth','acl'],'namespace' => 'Admin'],function(){
